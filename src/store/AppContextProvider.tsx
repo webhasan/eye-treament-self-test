@@ -42,6 +42,7 @@ const AppContextProvider:FC<propsType> = ({children}) => {
     const [treatments, setTreatments] = useState<treatmentType>([]);
     const [selfTest, setSelfTest] = useState<selfTestType>([]);
     const [currentTabIndex, setCurrentTabIndex] = useState<number>(0);
+    const [tabToBeChange, setTabToBeChange] = useState<number | boolean>(false);
     
     useEffect(() => {
         // TODO: Load real data from server
@@ -56,12 +57,18 @@ const AppContextProvider:FC<propsType> = ({children}) => {
         setCurrentTabIndex(index);
     }
 
+    const onTabChange = (index: number) => {
+        setTabToBeChange(index);
+    }
+
     const appContextValue = {
         treatments,
         selfTest,
         isLoading,
         currentTabIndex,
         setTabIndex,
+        onTabChange,
+        tabToBeChange,
     }
 
     if(isLoading) {

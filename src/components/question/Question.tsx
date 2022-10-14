@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction } from "react";
+import { Dispatch, FC, SetStateAction, MouseEvent, useEffect, useState } from "react";
 import SingleQuestionSet from './SingleQuestionSet';
 
 type propsType = {
@@ -30,15 +30,62 @@ type propsType = {
 }
 
 const Question:FC<propsType> = ({questionData, setNexIndex, questionIndex, buttonText, userInput, setUserInput}) => {
+    const [classes, setClasses] = useState('question-step-wrap');
+    const [error, setError] = useState<Record<number, boolean>>({});
+
+    const hasError = (index: number) => {
+        let error = false;
+        for(let i = 0; i < questionData.answers.length; i++) {
+            const {errorBelow, name} = questionData.answers[i];
+            if(errorBelow && !userInput[name]) {
+                error = true;
+                break;
+            }
+        }
+
+        return error;
+    }
+
+    useEffect(() => {
+        setClasses('question-step-wrap');
+        let timers = setTimeout(() => setClasses('question-step-wrap animation'), 100);
+        return () => clearTimeout(timers);
+    },[questionIndex]);
+
+    const handleNextQuestion = (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
+        if(!hasError(questionIndex)) {
+            setError(error => ({...error, [questionIndex]: false }))
+            setClasses('question-step-wrap animation animation-out');
+            setTimeout(() => setNexIndex(questionIndex + 1), 700);
+        }else {
+            setError(error => ({...error, [questionIndex]: true }))
+        }
+    }
+
+    const changeIndex = (index: number) => {
+        setClasses('question-step-wrap animation animation-out');
+        setTimeout(() => setNexIndex(index), 700);
+    }
+
     return (
-        <div className="question-step-wrap">
+        <div className={classes}>
             <h1>{questionData.title}</h1>
-            <div className="questions-set">
-                {questionData.answers.map(ans => {
-                  return <SingleQuestionSet {...ans} key={ans.name} userInput={userInput} setUserInput={setUserInput}/>
-                })}
+            <div className="question-area">
+                <p className="user-input-error">{error[questionIndex] ? 'Please select an option.': null}</p>
+                <div className="questions-set">
+                    {questionData.answers.map(ans => {
+                    return (
+                        <SingleQuestionSet 
+                            {...ans} 
+                            key={ans.name} 
+                            userInput={userInput} 
+                            setUserInput={setUserInput}
+                        />
+                    );
+                    })}
+                </div>
             </div>
-            <button className="x-btn" onClick={() => setNexIndex(questionIndex + 1)}>{buttonText}</button>
+            <button className="x-btn" onClick={handleNextQuestion}>{buttonText}</button>
         </div>
     )
 }

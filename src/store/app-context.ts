@@ -36,6 +36,10 @@ type appContextType = {
     currentTabIndex: number;
 
     setTabIndex: (index: number) => void;
+
+    onTabChange: (index: number) => void;
+
+    tabToBeChange: boolean | number;
 }
 
 const AppContext = React.createContext<appContextType>({
@@ -43,7 +47,9 @@ const AppContext = React.createContext<appContextType>({
     selfTest: [],
     isLoading: true,
     currentTabIndex: 0,
-    setTabIndex: (index) => {}
+    setTabIndex: (index) => {},
+    onTabChange: (index) => {},
+    tabToBeChange: false
 });
 
 

@@ -1,10 +1,5 @@
 import { ChangeEvent, Dispatch, FC, SetStateAction } from "react";
 
-type test = Record<string, any>
-
-// const object: test = {name: 'Md Hasanuzzaman', age: 23}
-// const newObject = {...object}
-
 type propsType = {
     name: string; 
     options: {
@@ -32,7 +27,7 @@ const SingleQuestionSet:FC<propsType> = ({name, options, as, errorBelow, userInp
     }
 
     return (
-        <div className="single-question-set">
+        <div className={`single-question-set question-type-${as}`}>
            {options.map(option => {
                 const isRadioSelected = ( as === 'radio' && userInput[name] && userInput[name] === option.value);
                 const isCheckboxSelected = ( as === 'checkbox' &&  userInput[name]);
