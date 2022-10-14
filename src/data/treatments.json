@@ -1,0 +1,722 @@
+[
+    {
+        "__typename": "Treatment",
+        "slug": "laser-vision-correction",
+        "priority": 1,
+        "name": "Laser Vision Correction",
+        "description": "Laser vision correction procedures to improve your vision and provide you with more visual freedom.",
+        "price": "€2500 per eye",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsWhatToExpect"
+            },
+            {
+                "__typename": "ComponentSharedTestimonials"
+            },
+            {
+                "__typename": "ComponentTreatmentsFaqs"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": "€2500 per eye",
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Before",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Vision Correction Initial Consultation",
+                                "sublabel": null,
+                                "price": "€150"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Laser vision correction  (LASIK, LASEK, TE-PRK, PRK, StreamLight)",
+                                "sublabel": null,
+                                "price": "€2500 per eye"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "FollowUp",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "First 12 months",
+                                "sublabel": null,
+                                "price": null
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "12 months - 4 years (Doctor & Optometrist)",
+                                "sublabel": null,
+                                "price": "€150"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "12 months - 4 years (Optometrist Only)",
+                                "sublabel": null,
+                                "price": "€100"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Doctor & Optometrist)",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each. Maximum 2 scans chargeable per visit. ",
+                                "price": "€250"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Optometrist Only)",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each. Maximum 2 scans chargeable per visit. ",
+                                "price": "€150"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Enhancement",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Laser vision correction enhancement procedure",
+                                "sublabel": "Enhancement to the same target and if initial surgery was within the last 5 years.",
+                                "price": null
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Laser vision correction enhancement procedure (if initial surgery was more than 5 years ago)",
+                                "sublabel": "Enhancement to a new target and/or if initial surgery was more than 5 years ago. Fee includes surgery fee, postoperative medications, one year of follow up appointments and 5 year warranty.",
+                                "price": "€2000"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Treatment",
+        "slug": "implantable-contact-lens",
+        "priority": 2,
+        "name": "Implantable Contact Lens ",
+        "description": "Permanent implantable (inside the eye) contact lenses to improve your vision naturally.",
+        "price": "€4900 - €5200 per eye",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsWhatToExpect"
+            },
+            {
+                "__typename": "ComponentSharedTestimonials"
+            },
+            {
+                "__typename": "ComponentTreatmentsFaqs"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": null,
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Before",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Vision Correction Initial Consultation",
+                                "sublabel": null,
+                                "price": "€150"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Implantable Contact Lenses",
+                                "sublabel": null,
+                                "price": "€4900 - €5200 per eye"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "FollowUp",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "First 12 months",
+                                "sublabel": null,
+                                "price": null
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "12 months - 4 years ",
+                                "sublabel": null,
+                                "price": "€150"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "12 months - 4 years (Optometrist Only)",
+                                "sublabel": null,
+                                "price": "€100"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Doctor & Optometrist)",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each. Maximum 2 scans chargeable per visit. ",
+                                "price": "€250"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Optometrist Only)",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each.Maximum 2 scans chargeable per visit. ",
+                                "price": "€150"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Treatment",
+        "slug": "custom-lens-replacement",
+        "priority": 3,
+        "name": "Custom Lens Replacement",
+        "description": "Replace the natural lens of your eye with a customised lens and remove the need for glasses and/or contact lenses.",
+        "price": "€4000 - €4950 per eye",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsWhatToExpect"
+            },
+            {
+                "__typename": "ComponentSharedTestimonials"
+            },
+            {
+                "__typename": "ComponentTreatmentsFaqs"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": null,
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Before",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Vision Correction Initial Consultation",
+                                "sublabel": null,
+                                "price": "€150"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Custom Lens Replacement",
+                                "sublabel": "Surgeon fee (€2500), hospital fee (€1100), anaesthetist fee (€400) and cost of the lens (€0-€950).  Approximate pricing as cost of lens can vary based on strength and lens type used. Full written quote will be provided prior to scheduling surgery.",
+                                "price": "€4000 - €4950 per eye"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "FollowUp",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "First 12 months",
+                                "sublabel": null,
+                                "price": null
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "12 months - 4 years (Doctor & Optometrist)",
+                                "sublabel": null,
+                                "price": "€150"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "12 months - 4 years (Optometrist Only)",
+                                "sublabel": null,
+                                "price": "€100"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Doctor & Optometrist)",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each.Maximum 2 scans chargeable per visit. ",
+                                "price": "€250"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Optometrist Only)",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each.Maximum 2 scans chargeable per visit. ",
+                                "price": "€150"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Treatment",
+        "slug": "cataracts",
+        "priority": 4,
+        "name": "Cataracts",
+        "description": "A medical condition where the lens of the eye becomes cloudy.",
+        "price": "€4360 - €5310 per eye",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsWhatToExpect"
+            },
+            {
+                "__typename": "ComponentSharedTestimonials"
+            },
+            {
+                "__typename": "ComponentTreatmentsFaqs"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": null,
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Before",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Cataract Evaluation",
+                                "sublabel": null,
+                                "price": "€300"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Cataract Surgery",
+                                "sublabel": "Surgeon fee (€2500), hospital fee (€1500), anaesthetist fee (€360) and cost of the lens (€0-€950).  Approximate pricing as cost of lens can vary based on strength and lens type used. Full written quote will be provided prior to scheduling surgery.",
+                                "price": "€4360 - €5310 per eye"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "FollowUp",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "1 week - 4 years (Doctor)",
+                                "sublabel": null,
+                                "price": "€150"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "1 week - 4 years (Optometrist only)",
+                                "sublabel": null,
+                                "price": "€100"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Doctor & Optometrist) ",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each.Maximum 2 scans chargeable per visit. ",
+                                "price": "€250"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Optometrist only)",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each.Maximum 2 scans chargeable per visit. ",
+                                "price": "€150"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Treatment",
+        "slug": "keratoconus",
+        "priority": 5,
+        "name": "Keratoconus",
+        "description": "A medical condition that causes your cornea to thin and gradually bulge outward into a cone shape.",
+        "price": "€2000",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentSharedTestimonials"
+            },
+            {
+                "__typename": "ComponentTreatmentsFaqs"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": null,
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Before",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Keratoconus Evaluation         ",
+                                "sublabel": null,
+                                "price": "€320"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Corneal cross-linking",
+                                "sublabel": null,
+                                "price": "€2000"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "SimLC/ PRK with CXL",
+                                "sublabel": null,
+                                "price": "€3000"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Intacs/ Myoring/ KeraNatural implants",
+                                "sublabel": null,
+                                "price": "€3000"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "FollowUp",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "First 12 months",
+                                "sublabel": null,
+                                "price": null
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "12 months - 4 years (Doctor & Optometrist)",
+                                "sublabel": null,
+                                "price": "€150"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "12 months - 4 years (Optometrist only)",
+                                "sublabel": null,
+                                "price": "€100"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Doctor & Optometrist) ",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each.Maximum 2 scans chargeable per visit. ",
+                                "price": "€250"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "After 4 years (Optometrist only) ",
+                                "sublabel": "Additional scans may be required with additional cost of €60 each.Maximum 2 scans chargeable per visit. ",
+                                "price": "€150"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Treatment",
+        "slug": "myopia-control",
+        "priority": 6,
+        "name": "Myopia Control",
+        "description": "How to stop your shortsightedness getting worse over time.",
+        "price": "€250",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsWhatToExpect"
+            },
+            {
+                "__typename": "ComponentSharedTestimonials"
+            },
+            {
+                "__typename": "ComponentTreatmentsFaqs"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": null,
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Myopia control / OrthoK consultation with Optometrist",
+                                "sublabel": "An initial consultation is required to determine your suitability for OrthoK lenses",
+                                "price": "€250"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "OrthoK contact lens- 1st fitting appointment",
+                                "sublabel": "The OrthoK lenses ordered after the initial consultation are fitted by an Optometrist- fee includes lens and consultation",
+                                "price": "€450"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "OrthoK contact lens - 6 month review appointment and replacement lens ",
+                                "sublabel": "OrthoK lenses require replacement after 6 months so fee includes new lens and review of fit with Optometrist",
+                                "price": "€350"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Treatment",
+        "slug": "bynocs",
+        "priority": 7,
+        "name": "Bynocs ",
+        "description": "A software programme designed to improve the vision in lazy eyes/ amblyopic eyes.",
+        "price": "€1790",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsFaqs"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": null,
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Before",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Bynocs AmblyGo Assessment",
+                                "sublabel": null,
+                                "price": "€150"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Bynocs AmblyGo treatment and 2 follow up visits",
+                                "sublabel": null,
+                                "price": "€1790"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Treatment",
+        "slug": "dry-eye",
+        "priority": 8,
+        "name": "Dry Eye",
+        "description": "Learn how to manage dry eye at home and the dry eye treatments that are available in the clinic.",
+        "price": "€450",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsHowItWorks"
+            },
+            {
+                "__typename": "ComponentTreatmentsFaqs"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": null,
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Before",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Full Eye Examination",
+                                "sublabel": null,
+                                "price": "€250"
+                            }
+                        ]
+                    },
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "MiboFlo",
+                                "sublabel": "Total cost for course of 3 treatments",
+                                "price": "€450"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "E-Eye IPL",
+                                "sublabel": "Total cost for course of 3 treatments",
+                                "price": "€600"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "Treatment",
+        "slug": "other-services",
+        "priority": 9,
+        "name": "Other Services",
+        "description": "We see patients with a wide range of other eye conditions as well as those who just want a full eye examination",
+        "price": "€250",
+        "sections": [
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsOverview"
+            },
+            {
+                "__typename": "ComponentTreatmentsPricing",
+                "price": "From €250",
+                "pricingSections": [
+                    {
+                        "__typename": "ComponentTreatmentsPricingSections",
+                        "type": "Treatment",
+                        "prices": [
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Full Eye Examination",
+                                "sublabel": null,
+                                "price": "€250"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Bynocs",
+                                "sublabel": "",
+                                "price": "€1790"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "YAG laser capsulotomy",
+                                "sublabel": "May be covered by private health insurance",
+                                "price": "€275"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "YAG laser peripheral iridotomy",
+                                "sublabel": "May be covered by private health insurance",
+                                "price": "€700"
+                            },
+                            {
+                                "__typename": "ComponentTreatmentsPrices",
+                                "label": "Cyst removal",
+                                "sublabel": "May be covered by private health insurance",
+                                "price": "€200"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

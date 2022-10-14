@@ -1,0 +1,1058 @@
+[
+    {
+        "title": "What would you like our help with?",
+        "image": "https://ik.imagekit.io/mbootxuaoli4/Wellington/Young_Girl_Flowers_Eyes_3db93ac16d_y-V0Q2NWs.jpg",
+        "answers": [
+            {
+                "as": "radio",
+                "name": "help",
+                "errorBelow": true,
+                "options": [
+                    {
+                        "label": "Getting rid of my glasses",
+                        "value": "removeGlasses",
+                        "results": {
+                            "other": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    {
+                        "label": "An eye condition",
+                        "value": "medicalCondition",
+                        "results": {
+                            "other": {
+                                "score": 70,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    {
+                        "label": "A routine eye exam to check my eye health",
+                        "value": "other",
+                        "results": {
+                            "other": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Which gender do you belong to?",
+        "image": "https://ik.imagekit.io/mbootxuaoli4/Wellington/Stocksy_txp5bc9fd51c3_N300_Medium_2285762_f495fcb0ca_CVUQ1PyZI.jpg",
+        "answers": [
+            {
+                "as": "radio",
+                "name": "gender",
+                "errorBelow": true,
+                "options": [
+                    {
+                        "label": "Male",
+                        "value": "male",
+                        "results": {
+                            "other": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    {
+                        "label": "Female",
+                        "value": "female",
+                        "results": {
+                            "other": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    {
+                        "label": "Prefer not to say",
+                        "value": "null",
+                        "results": {
+                            "other": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Which age group do you belong to?",
+        "image": "https://ik.imagekit.io/mbootxuaoli4/Wellington/Family_Ages_1c169b5ae8_rK8R9gRFKy.jpg",
+        "answers": [
+            {
+                "as": "radio",
+                "name": "ageRange",
+                "errorBelow": true,
+                "options": [
+                    {
+                        "label": "0 - 17 years old",
+                        "value": "0-17",
+                        "results": {
+                            "other": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": "If you are 0 - 17 years of age and experiencing eye issues, a full eye examination is recommended"
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 60,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 100,
+                                "reason": "Surgical correction of myopia is recommended for > 18 years of age so myopia control is the best option for our younger patients",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 20,
+                                "reason": "In some cases, we may consider laser vision correction for 17 years olds",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    {
+                        "label": "18 - 35 years old",
+                        "value": "18-35",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 90,
+                                "reason": "With many 18 - 35 year olds spending more time on screens, dry eye is common in this age group",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 50,
+                                "reason": "Conservative myopia control options such as OrthoK are more suitable for patients < 18 years of age. In 18- 35 year old patients, surgical correction is preferred",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 1,
+                                "reason": "We do not perform Custom Lens Replacement for patients < 35 years of age as it would prematurely reduce their reading abilities",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "The risks of laser vision correction are low and the outcomes typically excellent. Therefore patients in the 18- 35 age group are ideal candidates",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 100,
+                                "reason": "If your corneas are too thin for laser vision correction, ICL is an excellent option for 18- 35 year olds who have enough space in the front of the eye",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    {
+                        "label": "36 - 42 years old",
+                        "value": "36-42",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 60,
+                                "reason": "As we age, much like our skin, our eyes also become drier and 36-42 year olds often suffer from dry eye",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 100,
+                                "reason": "As we age, our near vision decreases and the wide range of IOLs and advanced technology IOLs used for custom lens replacement make this a great option for 36-42 year olds",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "Laser vision correction is our most common procedure and with no upper age limit, it is still a great option for 36-42. However for those in the 50-59 age group, a check of your lens will clarify if a Custom Lens Replacement procedure is a better option for you",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    {
+                        "label": "43 - 59 years old",
+                        "value": "43-59",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 60,
+                                "reason": "As we age, much like our skin, our eyes also become drier and 43-59 year olds often suffer from dry eye",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 100,
+                                "reason": "As we age, our near vision decreases and the wide range of IOLs and advanced technology IOLs used for custom lens replacement make this a great option for 43-59 year olds",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "Laser vision correction is our most common procedure and with no upper age limit, it is still a great option for 43-59. However for those in the 50-59 age group, a check of your lens will clarify if a Custom Lens Replacement procedure is a better option for you",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    {
+                        "label": "60+ years old",
+                        "value": "60+",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 90,
+                                "reason": "Cataracts increase as we get older and the average age of presentation is 68 years but they can present decades earlier on occasion so a thorough check of your lens will confirm if there is a cataract present",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 1,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 100,
+                                "reason": "For far-sighted people especially and the closer you are to 60, the more likely lens replacement becomes the procedure of choice",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 85,
+                                "reason": "If your lenses are clear and there is no sign of cataract, then laser vision correction could be the most suitable procedure for you",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 30,
+                                "reason": "If you have a high minus prescription e.g. more than -8.00, then ICL becomes an excellent option and once you are over -12 it is far and away the best option",
+                                "warning": "ICL is only possible if you have enough space in the front of the eye"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Do you know your prescription?",
+        "image": "https://ik.imagekit.io/mbootxuaoli4/Wellington/2380648_fc49f3f972_A4l-lBAnx.jpeg",
+        "answers": [
+            {
+                "as": "radio",
+                "name": "prescription",
+                "errorBelow": true,
+                "options": [
+                    {
+                        "label": "-0.25 to -2.00",
+                        "value": "-0.25 to -2.00",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 90,
+                                "reason": "Because your prescription is within -0.25 to -2.00 you are a good candidate for laser vision correction",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        },
+                        "description": "I can see well up close but struggle to see small things at a distance.",
+                        "explanation": ""
+                    },
+                    {
+                        "label": "-2.25 to -5.00",
+                        "value": "-2.25 to -5.00",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 30,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 60,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        },
+                        "description": "I can see well up close but struggle to see large objects at a distance.",
+                        "explanation": ""
+                    },
+                    {
+                        "label": "-5.25 to -10.00",
+                        "value": "-5.25 to -10.00",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 60,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        },
+                        "description": "I can only see something well if it’s directly in front of my face",
+                        "explanation": ""
+                    },
+                    {
+                        "label": "-10.25 or more",
+                        "value": "-10.25 or more",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 30,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 60,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 95,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        },
+                        "description": "I can only see something well if it’s a few centimetres from my eyes.",
+                        "explanation": ""
+                    },
+                    {
+                        "label": "+0.25 to + 3.00",
+                        "value": "+0.25 to + 3.00",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 30,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 60,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        },
+                        "description": "I can see well in the distance but struggle to read things close to me.",
+                        "explanation": ""
+                    },
+                    {
+                        "label": "+3.25 or more",
+                        "value": "+3.25 or more",
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 30,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 85,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "implantable-contact-lens": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        },
+                        "description": "I can see well in the distance but struggle to read things closer than 30cm",
+                        "explanation": ""
+                    },
+                    {
+                        "label": "I don't know",
+                        "value": "dontKnow",
+                        "results": {
+                            "other": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 0,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": "Since you do not know your prescription this may effect the overall match, but your doctor will discuss this with you in your consultation."
+                            },
+                            "implantable-contact-lens": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            }
+                        },
+                        "description": "I am unsure of my prescription",
+                        "explanation": "This is not an issue if you are not sure, generally if you have a high prescription we will still find a suitable procedure for you but it's likely not to be laser vision correction"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Let us know if these apply to your lifestyle",
+        "image": "https://ik.imagekit.io/mbootxuaoli4/Wellington/Stocksy_txpeb2db174_Vw_F300_Medium_1015087_b479f13668_N-MAkuX22lVK.jpg",
+        "answers": [
+            {
+                "as": "checkbox",
+                "name": "screen",
+                "options": [
+                    {
+                        "label": "I work with a screen more than ~8 hours a day",
+                        "value": true,
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": "We blink far less than normal when using a screen so this may result in your eyes feeling dry"
+                            },
+                            "cataracts": {
+                                "score": 30,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 60,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 30,
+                                "reason": "",
+                                "warning": "Since you work with a screen for most of the day, we need to ensure that your tear film is of good quality before we can proceed with laser vision correction "
+                            },
+                            "laser-vision-correction": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": "Since you work with a screen for most of the day, we need to ensure that your tear film is of good quality before we can proceed with laser vision correction"
+                            },
+                            "implantable-contact-lens": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": "Since you work with a screen for most of the day, we need to ensure that your tear film is of good quality before we can proceed with laser vision correction"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "as": "checkbox",
+                "name": "contactSports",
+                "options": [
+                    {
+                        "label": "I play contact sports regularly",
+                        "value": true,
+                        "results": {
+                            "other": {
+                                "score": 40,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 50,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 30,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 20,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 60,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 80,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "laser-vision-correction": {
+                                "score": 90,
+                                "reason": "",
+                                "warning": "Because you play contact sport, you must take up to 4 weeks off sport after your procedure."
+                            },
+                            "implantable-contact-lens": {
+                                "score": 90,
+                                "reason": "Beacuse you play contact sport, you must take up to 4 weeks off sport after your procedure",
+                                "warning": ""
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "as": "checkbox",
+                "name": "pilot",
+                "options": [
+                    {
+                        "label": "I have an occupational requirement for my eye sight (e.g. pilots, firemen, guards)",
+                        "value": true,
+                        "results": {
+                            "other": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "dry-eye": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "cataracts": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "keratoconus": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "myopia-control": {
+                                "score": 10,
+                                "reason": "",
+                                "warning": ""
+                            },
+                            "custom-lens-replacement": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": "Since you have to meet specific occupational requirements, our doctors will talk to you during your consultation to ensure you meet those vision standards after surgery"
+                            },
+                            "laser-vision-correction": {
+                                "score": 100,
+                                "reason": "",
+                                "warning": "Since you have to meet specific occupational requirements, our doctors will talk to you during your consultation to ensure you meet those vision standards after surgery"
+                            },
+                            "implantable-contact-lens": {
+                                "score": 100,
+                                "reason": "Since you have to meet specific occupational requirements, our doctors will talk to you during your consultation to ensure you meet those vision standards after surgery",
+                                "warning": ""
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
