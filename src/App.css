@@ -11515,6 +11515,7 @@ h2#color-blue font{
   overflow-y: auto;
 }
 
+
 #root .single-questions-step .question-step-wrap {
   padding: 50px 50px;
 }
@@ -11545,6 +11546,16 @@ h2#color-blue font{
   opacity: 0 !important;
   transition: all .2s ease-out;
   transform: translateX(-50px);
+}
+
+#root .single-questions-step .question-step-wrap .x-btn,
+#root .single-questions-step .question-step-wrap.animation.animation-out .x-btn {
+  opacity: 0;
+  transition: all .3s;
+}
+
+#root .single-questions-step .question-step-wrap.animation .x-btn {
+  opacity: 1;
 }
 
 #root .single-questions-step .question-image-wrap img {
@@ -11663,7 +11674,6 @@ h2#color-blue font{
   position: absolute;
   top: -2rem;
 }
-
 
 #root .self-test-hero {
   background-color: #d6ebff;
@@ -11809,3 +11819,88 @@ h2#color-blue font{
 #root .result-sections-wrap .test-results .result-buttons {
   margin-top: 50px;
 }
+
+
+@media(max-width: 767px) {
+  #root .single-questions-step .question-image-wrap {
+    display: none;
+  }
+
+  #root .single-questions-step .question-step-wrap {
+    width: 100%;
+  }
+
+  #root .single-questions-step .question-step-wrap {
+    padding: 10px 20px;
+  }
+
+  #root .single-questions-step .question-step-wrap h1 {
+    font-size: 26px;
+  }
+
+  #root .questionnaire-nav ul {
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  #root .single-questions-step label {
+    font-size: 16px;
+  }
+
+  #root .self-test-hero .buttons .self-here-button:first-child,
+  #root .result-sections-wrap .test-results .result-buttons a.learn-more-btn {
+    margin-bottom: 30px;
+  }
+
+  #root .result-sections-wrap .test-results {
+    padding: 40px 20px;
+  }
+
+  #root .self-test-hero h1 {
+    font-size: 30px;
+  }
+
+  #root .self-test-hero {
+    padding: 40px 15px;
+  }
+
+  #root .result-sections-wrap .test-results .single-result {
+    flex-wrap: wrap;
+  }
+
+  #root .result-sections-wrap .test-results .result-treatment, 
+  #root .result-sections-wrap .test-results .reason-warning {
+    width: 100%;
+  }
+
+  #root .result-sections-wrap .test-results .reason-warning {
+    padding-left: 0;
+  }
+
+  #root .result-sections-wrap .test-results .result-treatment {
+    padding-right: 0;
+    border: none;
+  }
+
+  #root .result-sections-wrap .test-results .reason-warning {
+    margin-top: 20px;
+  }
+
+  #root .result-sections-wrap .test-results .result-buttons a {
+    width: 100%;
+  }
+
+  #root .result-sections-wrap .test-results .single-result {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #root .result-sections-wrap .test-results .single-result:last-child {
+    border: none;
+  }
+
+  #root .result-sections-wrap .test-results h2 {
+    font-size: 25px;
+  }
+}
+

@@ -83,11 +83,12 @@ const Question:FC<propsType> = (props) => {
             setClasses('question-step-wrap animation animation-out');
             setTimeout(() => {
                 if((totalQuestions - 1) === questionIndex) {
-                    console.log('I am the last setup');
                     addUserInput(userInput);
                     setUserInput({});
+                }else {
+                    setNexIndex(questionIndex + 1);
                 }
-                setNexIndex(questionIndex + 1);
+               
             }, transitionTime);
         }else {
             setError(error => ({...error, [questionIndex]: true }))

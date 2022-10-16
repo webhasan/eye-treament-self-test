@@ -19,8 +19,6 @@ const SingleResult:FC<propTypes> = ({resultData}) => {
     const {pageData, answers} = useContext(AppContext);
     const { name, description, url, score, reasons, warnings, price }  = resultData;
 
-    console.log(pageData);
-
     const consultationURL = (url: string) => {
         const params = {
             ...answers as Record<string, string | boolean>,

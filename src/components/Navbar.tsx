@@ -2,10 +2,10 @@ import { useContext, useState } from "react";
 import AppContext from "../store/app-context";
 
 const Navbar = () => {
-    const {selfTest, currentTabIndex, onTabChange, setTabIndex, transitionTime} = useContext(AppContext);
+    const {selfTest, currentTabIndex, onTabChange, setTabIndex, transitionTime, answers} = useContext(AppContext);
 
     const switchTab = (index: number) => {
-        if(index < currentTabIndex) {
+        if(index < currentTabIndex && !answers) {
             onTabChange(true);
 
             setTimeout(() => {
@@ -15,15 +15,15 @@ const Navbar = () => {
         }
     }
 
-    const resultTabClasses = currentTabIndex === selfTest.length ? 'result-tab active-result' : 'result-tab';
+    const resultTabClasses = !!answers ? 'result-tab active-result' : 'result-tab';
 
     return (
         <nav className="questionnaire-nav">
             <ul>
                 {selfTest.map((test, index) => {
-                    let classes = currentTabIndex === index ? 'single-tab-nav active' : 'single-tab-nav';
+                    let classes = (currentTabIndex === index && !answers) ? 'single-tab-nav active' : 'single-tab-nav';
 
-                    if(index > currentTabIndex || currentTabIndex === selfTest.length) {
+                    if(index > currentTabIndex || !!answers) {
                         classes += ' not-allowed';
                     }
 

@@ -2,12 +2,10 @@ import { FC, useContext, useRef, useState } from "react";
 import AppContext from "../store/app-context";
 import Question from './question/Question';
 import QuestionImage from "./question/QuestionImage";
-import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 const Questionnaire:FC = () => {
     const {selfTest, currentTabIndex, setTabIndex, tabToBeChange, transitionTime, addUserInput, answers} = useContext(AppContext);
     const [userInput, setUserInput] = useState<Record<any, any>>({});
-    console.log(answers);
 
     if(answers) {
         return null;
