@@ -1,10 +1,10 @@
-import { FC, useContext, useRef, useState } from "react";
+import { useContext, useState } from "react";
 import AppContext from "../store/app-context";
 import Question from './question/Question';
 import QuestionImage from "./question/QuestionImage";
 
-const Questionnaire:FC = () => {
-    const {selfTest, currentTabIndex, setTabIndex, tabToBeChange, transitionTime, addUserInput, answers} = useContext(AppContext);
+const Questionnaire = () => {
+    const {selfTest, currentTabIndex, answers } = useContext(AppContext);
     const [userInput, setUserInput] = useState<Record<any, any>>({});
 
     if(answers) {
@@ -14,16 +14,8 @@ const Questionnaire:FC = () => {
     return (
         <div className="single-questions-step">
             <Question 
-                questionIndex = {currentTabIndex}
-                questionData = {selfTest[currentTabIndex]}
-                setNexIndex = {setTabIndex}
-                buttonText = {currentTabIndex === (selfTest.length - 1) ? 'Submit': 'Next Question'}
                 userInput = {userInput}
                 setUserInput = {setUserInput}
-                tabToBeChange = {tabToBeChange}
-                transitionTime = {transitionTime}
-                addUserInput = {addUserInput}
-                totalQuestions = {selfTest.length}
             />
             <QuestionImage 
                 src={selfTest[currentTabIndex].image}

@@ -38,6 +38,7 @@ type appContextType = {
         reasonHeading: string;
         warningHeading: string;
         warningSubHeading: string;
+        homePageUrl: string;
     }
 
     isLoading: boolean;
@@ -75,7 +76,8 @@ const AppContext = React.createContext<appContextType>({
         requestConsultationUrl: "#",
         reasonHeading: "",
         warningHeading: "",
-        warningSubHeading: ""
+        warningSubHeading: "",
+        homePageUrl: "#"
     }
 });
 

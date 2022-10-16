@@ -1,52 +1,31 @@
-import { Dispatch, FC, SetStateAction, MouseEvent, useEffect, useState } from "react";
+import { Dispatch, FC, SetStateAction, MouseEvent, useEffect, useState, useContext } from "react";
+import AppContext from "../../store/app-context";
 import SingleQuestionSet from './SingleQuestionSet';
 
+
 type propsType = {
-    questionIndex: number;
-    setNexIndex: (index: number) => void;
-    buttonText: string;
     userInput: Record<any, any>;
     setUserInput: Dispatch<SetStateAction<Record<any, any>>>;
-    tabToBeChange: boolean;
-    transitionTime: number;
-    addUserInput:  (inputs: Record<string, string | boolean>) => void;
-    totalQuestions: number;
-    questionData: {
-        title: string;
-        image: string;
-        answers: {
-            as: string;
-            name: string;
-            errorBelow?: boolean;
-            options: {
-                label: string;
-                value: string | boolean;
-                description?: string;
-                explanation?: string;
-                results: Record<any, {
-                    score: number;
-                    reason: string;
-                    warning: string;
-                }>;
-            }[];
-        }[];
-    }
 }
 
 const Question:FC<propsType> = (props) => {
+    const {
+        currentTabIndex, 
+        selfTest,
+        setTabIndex,
+        tabToBeChange,
+        transitionTime,
+        addUserInput
+    } = useContext(AppContext);
+
+    const questionData = selfTest[currentTabIndex];
+    const buttonText = currentTabIndex === (selfTest.length - 1) ? 'Submit': 'Next Question';
+    const totalQuestions = selfTest.length;
 
 
     const {
-        questionData, 
-        transitionTime, 
-        setNexIndex, 
-        questionIndex, 
-        buttonText, 
         userInput, 
         setUserInput, 
-        tabToBeChange, 
-        addUserInput,
-        totalQuestions
     } = props;
 
     const [classes, setClasses] = useState('question-step-wrap');
@@ -69,7 +48,7 @@ const Question:FC<propsType> = (props) => {
         setClasses('question-step-wrap');
         let timers = setTimeout(() => setClasses('question-step-wrap animation'), 100);
         return () => clearTimeout(timers);
-    },[questionIndex]);
+    },[currentTabIndex]);
 
     useEffect(() => {
         if(tabToBeChange) {
@@ -78,20 +57,20 @@ const Question:FC<propsType> = (props) => {
     }, [tabToBeChange]);
 
     const handleNextQuestion = (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
-        if(!hasError(questionIndex)) {
-            setError(error => ({...error, [questionIndex]: false }))
+        if(!hasError(currentTabIndex)) {
+            setError(error => ({...error, [currentTabIndex]: false }))
             setClasses('question-step-wrap animation animation-out');
             setTimeout(() => {
-                if((totalQuestions - 1) === questionIndex) {
+                if((totalQuestions - 1) === currentTabIndex) {
                     addUserInput(userInput);
                     setUserInput({});
                 }else {
-                    setNexIndex(questionIndex + 1);
+                    setTabIndex(currentTabIndex + 1);
                 }
                
             }, transitionTime);
         }else {
-            setError(error => ({...error, [questionIndex]: true }))
+            setError(error => ({...error, [currentTabIndex]: true }))
         }
     }
 
@@ -99,7 +78,7 @@ const Question:FC<propsType> = (props) => {
         <div className={classes}>
             <h1>{questionData.title}</h1>
             <div className="question-area">
-                <p className="user-input-error">{error[questionIndex] ? 'Please select an option.': null}</p>
+                <p className="user-input-error">{error[currentTabIndex] ? 'Please select an option.': null}</p>
                 <div className="questions-set">
                     {questionData.answers.map(ans => {
                     return (

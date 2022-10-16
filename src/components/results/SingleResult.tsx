@@ -35,7 +35,7 @@ const SingleResult:FC<propTypes> = ({resultData}) => {
             <div className="result-treatment">
                 <FadeIn>
                     <span className="badge score">
-                        <CountUp end={score} suffix="% Match"  duration={1}/>
+                        <CountUp end={score} suffix="% Match"  duration={1.5}/>
                     </span>
                     <h2>{name}</h2>
                     <p>{description}</p>

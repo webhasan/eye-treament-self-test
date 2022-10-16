@@ -2,7 +2,15 @@ import { useContext, useState } from "react";
 import AppContext from "../store/app-context";
 
 const Navbar = () => {
-    const {selfTest, currentTabIndex, onTabChange, setTabIndex, transitionTime, answers} = useContext(AppContext);
+    const {
+        selfTest, 
+        currentTabIndex, 
+        onTabChange, 
+        setTabIndex, 
+        transitionTime, 
+        answers,
+        pageData
+    } = useContext(AppContext);
 
     const switchTab = (index: number) => {
         if(index < currentTabIndex && !answers) {
@@ -42,6 +50,12 @@ const Navbar = () => {
                 <li className={resultTabClasses}>
                     Result
                 </li>
+
+                {!!pageData.homePageUrl && (
+                    <li className="back-to-home">
+                        <a href={pageData.homePageUrl}>✕</a>
+                    </li>
+                )}
             </ul>
             <span className="app-process-bar" style={{width: `${(currentTabIndex + 1)  * 100 / selfTest.length}%`}}></span>
         </nav>

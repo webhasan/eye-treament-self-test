@@ -19,7 +19,7 @@ const Result = () => {
             <ResultHero 
                 heading={pageData.selfTestResultsHeading} 
                 subHeading = {pageData.selfTestResultDescription}
-                buttonURL="#"
+                buttonURL={pageData.allTreatmentUrl}
             />
 
             <div className="test-results">

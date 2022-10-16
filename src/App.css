@@ -11429,6 +11429,10 @@ h2#color-blue font{
 
 /* QUESTIONNAIRE STYLE */
 
+#root .questionnaire-nav {
+  position: relative;
+}
+
 #root .questionnaire-nav ul {
   list-style: none;
   display: flex;
@@ -11479,6 +11483,24 @@ h2#color-blue font{
   opacity: 1;
 }
 
+#root .questionnaire-nav ul .back-to-home a {
+  font-size: 1.8em;
+  font-weight: lighter;
+  color: gray;
+  font-weight: lighter;
+}
+
+#root .questionnaire-nav ul .back-to-home a:hover {
+  color: rgb(2,89,171);
+}
+
+@media(min-width: 768px) {
+  #root .questionnaire-nav ul .back-to-home {
+    margin-left: auto;
+  }
+  
+}
+
 @media (max-width: 500px) {
   #root .questionnaire-nav ul {
     padding-left: 0;
@@ -11501,11 +11523,14 @@ h2#color-blue font{
   background-color: rgb(2,89,171);
   height: 4px;
   display: block;
+  transition: all .3s;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 #root .single-questions-step {
   display: flex;
-  margin-top: -4px;
 }
 
 #root .single-questions-step .question-step-wrap,
@@ -11821,6 +11846,7 @@ h2#color-blue font{
 }
 
 
+
 @media(max-width: 767px) {
   #root .single-questions-step .question-image-wrap {
     display: none;
@@ -11842,6 +11868,7 @@ h2#color-blue font{
     justify-content: space-between;
     height: 60px;
   }
+
 
   #root .single-questions-step label {
     font-size: 16px;
