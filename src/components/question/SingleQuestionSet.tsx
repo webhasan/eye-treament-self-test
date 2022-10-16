@@ -1,4 +1,4 @@
-import { ChangeEvent, Dispatch, FC, SetStateAction } from "react";
+import { ChangeEvent, FC } from "react";
 
 type propsType = {
     name: string; 
@@ -30,18 +30,20 @@ const SingleQuestionSet:FC<propsType> = ({name, options, as, errorBelow, userInp
         <div className={`single-question-set question-type-${as}`}>
            {options.map(option => {
                 const isRadioSelected = ( as === 'radio' && userInput[name] && userInput[name] === option.value);
-                const isCheckboxSelected = ( as === 'checkbox' &&  userInput[name]);
+                const isCheckboxSelected = ( as === 'checkbox' &&  !!userInput[name]);
 
                 let isSelected = isRadioSelected || isCheckboxSelected;
+
+                const value = as !== 'checkbox' ? {value: option.value as string} : {}
 
                 return (
                     <label key={option.label}>
                         <input 
                             type={as} 
                             name={name} 
-                            value={option.value as string} 
                             checked={isSelected}
                             onChange={handleChange}
+                            {...value}
                         />
 
                         <span className="label-wrap">

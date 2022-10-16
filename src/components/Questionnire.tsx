@@ -5,10 +5,11 @@ import QuestionImage from "./question/QuestionImage";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 const Questionnaire:FC = () => {
-    const {selfTest, currentTabIndex, setTabIndex, tabToBeChange} = useContext(AppContext);
+    const {selfTest, currentTabIndex, setTabIndex, tabToBeChange, transitionTime, addUserInput, answers} = useContext(AppContext);
     const [userInput, setUserInput] = useState<Record<any, any>>({});
+    console.log(answers);
 
-    if(currentTabIndex > selfTest.length - 1) {
+    if(answers) {
         return null;
     }
 
@@ -21,6 +22,10 @@ const Questionnaire:FC = () => {
                 buttonText = {currentTabIndex === (selfTest.length - 1) ? 'Submit': 'Next Question'}
                 userInput = {userInput}
                 setUserInput = {setUserInput}
+                tabToBeChange = {tabToBeChange}
+                transitionTime = {transitionTime}
+                addUserInput = {addUserInput}
+                totalQuestions = {selfTest.length}
             />
             <QuestionImage 
                 src={selfTest[currentTabIndex].image}

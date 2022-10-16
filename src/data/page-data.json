@@ -1,0 +1,9 @@
+{
+    "selfTestResultsHeading": "Your self test results",
+    "selfTestResultDescription": "We’ve highlighted your self test results for you below. These are a guideline. Our doctors will advise you on your best option.",
+    "allTreatmentUrl": "#",
+    "requestConsultationUrl": "https://test.com",
+    "reasonHeading": "This is recommended because:",
+    "warningHeading": "Some considerations:",
+    "warningSubHeading": "Don't worry our doctors will discuss these with you in your consultation"
+}

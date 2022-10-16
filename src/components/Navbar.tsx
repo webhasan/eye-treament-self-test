@@ -2,11 +2,16 @@ import { useContext, useState } from "react";
 import AppContext from "../store/app-context";
 
 const Navbar = () => {
-    const {selfTest, currentTabIndex, onTabChange} = useContext(AppContext);
+    const {selfTest, currentTabIndex, onTabChange, setTabIndex, transitionTime} = useContext(AppContext);
 
     const switchTab = (index: number) => {
         if(index < currentTabIndex) {
-            onTabChange(index);
+            onTabChange(true);
+
+            setTimeout(() => {
+                onTabChange(false);
+                setTabIndex(index);
+            }, transitionTime);
         }
     }
 

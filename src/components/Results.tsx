@@ -1,15 +1,37 @@
 import { useContext } from "react";
 import AppContext from "../store/app-context";
+import { getTestResult } from "../utils/functions";
+import ResultHero from "./results/ResultsHero";
+import SingleResult from "./results/SingleResult";
 
 const Result = () => {
-    const {selfTest, currentTabIndex} = useContext(AppContext);
+    const {answers, treatments, selfTest, pageData} = useContext(AppContext);
 
-    if(selfTest.length !== currentTabIndex) {
+
+    if(!answers) {
         return null;
     }
 
+    const results = getTestResult(selfTest, treatments, answers);
+
     return (
-        <h1>All Self Test Result will be here.</h1>
+        <section className="result-sections-wrap">
+            <ResultHero 
+                heading={pageData.selfTestResultsHeading} 
+                subHeading = {pageData.selfTestResultDescription}
+                buttonURL="#"
+            />
+
+            <div className="test-results">
+                {results.map(result => (
+                    <SingleResult
+                        key={result.name}
+                        resultData={result}
+                    />
+                ))}
+            </div>
+
+        </section>
     )
 }
 

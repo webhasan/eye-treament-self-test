@@ -7,6 +7,10 @@ type propsType = {
     buttonText: string;
     userInput: Record<any, any>;
     setUserInput: Dispatch<SetStateAction<Record<any, any>>>;
+    tabToBeChange: boolean;
+    transitionTime: number;
+    addUserInput:  (inputs: Record<string, string | boolean>) => void;
+    totalQuestions: number;
     questionData: {
         title: string;
         image: string;
@@ -29,7 +33,22 @@ type propsType = {
     }
 }
 
-const Question:FC<propsType> = ({questionData, setNexIndex, questionIndex, buttonText, userInput, setUserInput}) => {
+const Question:FC<propsType> = (props) => {
+
+
+    const {
+        questionData, 
+        transitionTime, 
+        setNexIndex, 
+        questionIndex, 
+        buttonText, 
+        userInput, 
+        setUserInput, 
+        tabToBeChange, 
+        addUserInput,
+        totalQuestions
+    } = props;
+
     const [classes, setClasses] = useState('question-step-wrap');
     const [error, setError] = useState<Record<number, boolean>>({});
 
@@ -52,19 +71,27 @@ const Question:FC<propsType> = ({questionData, setNexIndex, questionIndex, butto
         return () => clearTimeout(timers);
     },[questionIndex]);
 
+    useEffect(() => {
+        if(tabToBeChange) {
+            setClasses('question-step-wrap animation animation-out');
+        }
+    }, [tabToBeChange]);
+
     const handleNextQuestion = (e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
         if(!hasError(questionIndex)) {
             setError(error => ({...error, [questionIndex]: false }))
             setClasses('question-step-wrap animation animation-out');
-            setTimeout(() => setNexIndex(questionIndex + 1), 700);
+            setTimeout(() => {
+                if((totalQuestions - 1) === questionIndex) {
+                    console.log('I am the last setup');
+                    addUserInput(userInput);
+                    setUserInput({});
+                }
+                setNexIndex(questionIndex + 1);
+            }, transitionTime);
         }else {
             setError(error => ({...error, [questionIndex]: true }))
         }
-    }
-
-    const changeIndex = (index: number) => {
-        setClasses('question-step-wrap animation animation-out');
-        setTimeout(() => setNexIndex(index), 700);
     }
 
     return (

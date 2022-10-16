@@ -2,7 +2,6 @@ import React from 'react';
 
 type appContextType = {
     treatments: {
-        __typename: string;
         slug: string;
         priority: number;
         name: string;
@@ -31,15 +30,31 @@ type appContextType = {
         }[];
     }[];
 
+    pageData: {
+        selfTestResultsHeading: string;
+        selfTestResultDescription: string;
+        allTreatmentUrl?: string;
+        requestConsultationUrl?: string;
+        reasonHeading: string;
+        warningHeading: string;
+        warningSubHeading: string;
+    }
+
     isLoading: boolean;
 
     currentTabIndex: number;
 
     setTabIndex: (index: number) => void;
 
-    onTabChange: (index: number) => void;
+    onTabChange: (index: boolean) => void;
 
-    tabToBeChange: boolean | number;
+    tabToBeChange: boolean;
+
+    transitionTime: number; 
+
+    answers: Record<string, string | boolean> | null;
+
+    addUserInput: (inputs: null | Record<string, string | boolean>) => void;
 }
 
 const AppContext = React.createContext<appContextType>({
@@ -49,7 +64,19 @@ const AppContext = React.createContext<appContextType>({
     currentTabIndex: 0,
     setTabIndex: (index) => {},
     onTabChange: (index) => {},
-    tabToBeChange: false
+    tabToBeChange: false,
+    transitionTime: 500, //transition time for question out
+    answers: {},
+    addUserInput: (inputs) => null,
+    pageData: {
+        selfTestResultsHeading: "",
+        selfTestResultDescription: "",
+        allTreatmentUrl: "#",
+        requestConsultationUrl: "#",
+        reasonHeading: "",
+        warningHeading: "",
+        warningSubHeading: ""
+    }
 });
 
 

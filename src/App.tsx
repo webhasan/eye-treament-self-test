@@ -7,13 +7,15 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <AppContextProvider>
-        <Navbar/>
-        <Questionnaire/>
-        <Result/>
-      </AppContextProvider>
-    </div>
+    <React.StrictMode>
+      <div className="App">
+        <AppContextProvider>
+          <Navbar/>
+          <Questionnaire/>
+          <Result/>
+        </AppContextProvider>
+      </div>
+    </React.StrictMode>
   );
 }
 

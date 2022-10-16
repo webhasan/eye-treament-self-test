@@ -1,4 +1,6 @@
 /* THEME DEFAULT STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
   display:block
@@ -11199,40 +11201,15 @@ body.x-navbar-fixed-top-active .x-navbar-wrap{
 [data-x-icon-s]:before{
   content:attr(data-x-icon-s);
 }
-@font-face{
-  font-family:'FontAwesomeRegular';
-  font-style:normal;
-  font-weight:400;
-  font-display:block;
-  src:url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.woff2') format('woff2'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.woff') format('woff'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.ttf') format('truetype');
-}
-@font-face{
-  font-family:'FontAwesomePro';
-  font-style:normal;
-  font-weight:400;
-  font-display:block;
-  src:url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.woff2') format('woff2'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.woff') format('woff'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.ttf') format('truetype');
-}
+
+
 [data-x-icon-o]{
   font-family:"FontAwesomeRegular" !important;
 }
 [data-x-icon-o]:before{
   content:attr(data-x-icon-o);
 }
-@font-face{
-  font-family:'FontAwesomeLight';
-  font-style:normal;
-  font-weight:300;
-  font-display:block;
-  src:url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.woff2') format('woff2'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.woff') format('woff'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.ttf') format('truetype');
-}
-@font-face{
-  font-family:'FontAwesomePro';
-  font-style:normal;
-  font-weight:300;
-  font-display:block;
-  src:url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.woff2') format('woff2'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.woff') format('woff'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.ttf') format('truetype');
-}
+
 [data-x-icon-l]{
   font-family:"FontAwesomeLight" !important;
   font-weight:300;
@@ -11240,13 +11217,7 @@ body.x-navbar-fixed-top-active .x-navbar-wrap{
 [data-x-icon-l]:before{
   content:attr(data-x-icon-l);
 }
-@font-face{
-  font-family:'FontAwesomeBrands';
-  font-style:normal;
-  font-weight:normal;
-  font-display:block;
-  src:url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-brands-400.woff2') format('woff2'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-brands-400.woff') format('woff'),url('https://drcameronmclintock.com.au/wp-content/plugins/cornerstone/assets/fonts/fa-brands-400.ttf') format('truetype');
-}
+
 [data-x-icon-b]{
   font-family:"FontAwesomeBrands" !important;
 }
@@ -11691,4 +11662,150 @@ h2#color-blue font{
   color: red;
   position: absolute;
   top: -2rem;
+}
+
+
+#root .self-test-hero {
+  background-color: #d6ebff;
+  text-align: center;
+  padding: 70px 15px;
+}
+
+#root .self-test-hero h1 {
+  margin-top: 0;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#root .self-test-hero p {
+  max-width: 768px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#root .self-test-hero .buttons {
+  margin-top: 40px;
+}
+
+#root .self-test-hero .buttons .self-here-button,
+#root .result-sections-wrap .test-results .result-buttons a {
+  padding: 10px 30px;
+  border: 1px solid rgb(2,89,171);
+  border-radius: 50px;
+  display: inline-block;
+  background-color: transparent;
+  outline: none;
+  font-size: 17px;
+  color: rgb(2,89,171);
+  transition: all .3s;
+}
+
+#root .self-test-hero .buttons .self-here-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#root .self-test-hero .buttons .self-here-button:hover,
+#root .result-sections-wrap .test-results .result-buttons a:hover,
+#root .result-sections-wrap .test-results .result-buttons a.consultation-btn { 
+  background-color: rgb(2,89,171);
+  color: #fff;
+}
+
+#root .result-sections-wrap .test-results .result-buttons a.consultation-btn:hover  {
+  background-color: rgb(2,136,250);
+  border-color: rgb(2,136,250);
+}
+
+
+#root .result-sections-wrap .test-results .result-buttons a.learn-more-btn {
+  margin-right: 20px;
+}
+
+#root .result-sections-wrap .test-results {
+  padding: 80px 50px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+#root .result-sections-wrap .test-results .single-result {
+  display: flex;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+#root .result-sections-wrap .test-results .result-treatment,
+#root .result-sections-wrap .test-results .reason-warning {
+  width: 50%;
+}
+
+#root .result-sections-wrap .test-results .result-treatment {
+  padding-right: 2rem;
+  border-right: 1px solid #ddd;
+}
+
+#root .result-sections-wrap .test-results .result-treatment p {
+  margin-bottom: 21px;
+}
+
+#root .result-sections-wrap .test-results .result-treatment .badge.score {
+  color: #015aac;
+  background-color: #0159ac19;
+  border-radius: 100px;
+  padding: 6px 14px;
+  display: inline-block;
+  letter-spacing: .07em;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat",sans-serif;
+  margin-bottom: 30px;
+}
+
+#root .result-sections-wrap .test-results .result-treatment .price {
+  font-family: "Montserrat",sans-serif;
+  font-size: 15px;
+}
+
+
+#root .result-sections-wrap .test-results .reason-warning {
+  padding-left: 2rem;
+}
+
+#root .result-sections-wrap .test-results  h2 {
+  margin-top: 0;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#root .result-sections-wrap .test-results .single-result ul li {
+  list-style: square;
+}
+
+#root .result-sections-wrap .test-results .single-result ul li::marker {
+    font-size: 1.5rem;
+}
+
+#root .result-sections-wrap .reason-warning h3 {
+  font-size: 20px;
+  color: #202020;
+  text-transform: none;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#root .result-sections-wrap .reason-warning .reasons {
+  margin-bottom: 50px;
+}
+
+#root .result-sections-wrap .reason-warning .warnings p {
+  margin-bottom: 10px;
+  font-size: .8em;
+  color: gray;
+}
+
+#root .result-sections-wrap .test-results .result-buttons {
+  margin-top: 50px;
 }
