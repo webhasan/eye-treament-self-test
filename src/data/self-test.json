@@ -598,8 +598,7 @@
                                 "warning": ""
                             }
                         },
-                        "description": "I can see well up close but struggle to see small things at a distance.",
-                        "explanation": ""
+                        "description": "I can see well up close but struggle to see small things at a distance."
                     },
                     {
                         "label": "-2.25 to -5.00",
@@ -646,8 +645,7 @@
                                 "warning": ""
                             }
                         },
-                        "description": "I can see well up close but struggle to see large objects at a distance.",
-                        "explanation": ""
+                        "description": "I can see well up close but struggle to see large objects at a distance."
                     },
                     {
                         "label": "-5.25 to -10.00",
@@ -694,8 +692,7 @@
                                 "warning": ""
                             }
                         },
-                        "description": "I can only see something well if it’s directly in front of my face",
-                        "explanation": ""
+                        "description": "I can only see something well if it’s directly in front of my face"
                     },
                     {
                         "label": "-10.25 or more",
@@ -742,8 +739,7 @@
                                 "warning": ""
                             }
                         },
-                        "description": "I can only see something well if it’s a few centimetres from my eyes.",
-                        "explanation": ""
+                        "description": "I can only see something well if it’s a few centimetres from my eyes."
                     },
                     {
                         "label": "+0.25 to + 3.00",
@@ -790,8 +786,7 @@
                                 "warning": ""
                             }
                         },
-                        "description": "I can see well in the distance but struggle to read things close to me.",
-                        "explanation": ""
+                        "description": "I can see well in the distance but struggle to read things close to me."
                     },
                     {
                         "label": "+3.25 or more",
@@ -838,8 +833,7 @@
                                 "warning": ""
                             }
                         },
-                        "description": "I can see well in the distance but struggle to read things closer than 30cm",
-                        "explanation": ""
+                        "description": "I can see well in the distance but struggle to read things closer than 30cm"
                     },
                     {
                         "label": "I don't know",
@@ -886,8 +880,7 @@
                                 "warning": ""
                             }
                         },
-                        "description": "I am unsure of my prescription",
-                        "explanation": "This is not an issue if you are not sure, generally if you have a high prescription we will still find a suitable procedure for you but it's likely not to be laser vision correction"
+                        "description": "I am unsure of my prescription"
                     }
                 ]
             }

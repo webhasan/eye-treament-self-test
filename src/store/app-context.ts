@@ -1,45 +1,14 @@
 import React from 'react';
 
+//type
+import {treatmentType, testType, pageData} from '../types';
+
 type appContextType = {
-    treatments: {
-        slug: string;
-        priority: number;
-        name: string;
-        description: string;
-        price: string;
-    }[];
+    treatments: treatmentType[];
+    
+    selfTest: testType[];
 
-    selfTest: {
-        title: string;
-        image: string;
-        answers: {
-            as: string;
-            name: string;
-            errorBelow?: boolean;
-            options: {
-                label: string;
-                value: string | boolean;
-                description?: string;
-                explanation?: string;
-                results: Record<any, {
-                    score: number;
-                    reason: string;
-                    warning: string;
-                }>;
-            }[];
-        }[];
-    }[];
-
-    pageData: {
-        selfTestResultsHeading: string;
-        selfTestResultDescription: string;
-        allTreatmentUrl?: string;
-        requestConsultationUrl?: string;
-        reasonHeading: string;
-        warningHeading: string;
-        warningSubHeading: string;
-        homePageUrl: string;
-    }
+    pageData: pageData;
 
     isLoading: boolean;
 

@@ -4,45 +4,9 @@ import treatmentsData from '../data/treatments.json';
 import selfTestData from '../data/self-test.json';
 import pageRawData from '../data/page-data.json';
 
-type treatmentType = {
-    slug: string;
-    priority: number;
-    name: string;
-    description: string;
-    price: string;
-}[];
+//types
+import {treatmentType, testType, pageData} from '../types';
 
-type selfTestType = {
-    title: string;
-    image: string;
-    answers: {
-        as: string;
-        name: string;
-        errorBelow?: boolean;
-        options: {
-            label: string;
-            value: string | boolean;
-            description?: string;
-            explanation?: string;
-            results: Record<any, {
-                score: number;
-                reason: string;
-                warning: string;
-            }>;
-        }[];
-    }[];
-}[];
-
-type pageData = {
-    selfTestResultsHeading: string;
-    selfTestResultDescription: string;
-    allTreatmentUrl?: string;
-    requestConsultationUrl?: string;
-    reasonHeading: string;
-    warningHeading: string;
-    warningSubHeading: string;
-    homePageUrl: string;
-}
 
 type propsType = {
     children: ReactNode
@@ -50,8 +14,8 @@ type propsType = {
 
 const AppContextProvider:FC<propsType> = ({children}) => {
     const [isLoading, setIsLoading] = useState(true);
-    const [treatments, setTreatments] = useState<treatmentType>([]);
-    const [selfTest, setSelfTest] = useState<selfTestType>([]);
+    const [treatments, setTreatments] = useState<treatmentType[]>([]);
+    const [selfTest, setSelfTest] = useState<testType[]>([]);
     const [pageData, setPageData] = useState<pageData>({
         selfTestResultsHeading: "",
         selfTestResultDescription: "",
