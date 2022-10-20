@@ -57,7 +57,7 @@ const AppContextProvider:FC<propsType> = ({children}) => {
     }
 
     const addUserInput = (inputs: Record<string, string | boolean> | null) => {
-        if(null) {
+        if(!inputs) {
             localStorage.removeItem('answer');
         }else {
             localStorage.setItem('answer', JSON.stringify(inputs));
