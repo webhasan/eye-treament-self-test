@@ -1,4 +1,4 @@
 # Self Eye Test
-It's an application for testing eyes and finding out possible diseases. 
+The application is designed using React JS to test eyes and identify potential diseases. 
 
-[Live Link →](https://www.southsideeyecentre.com.au/self-test)
+[Live Link →](https://drcameronmclintock.com.au/self-test/)
